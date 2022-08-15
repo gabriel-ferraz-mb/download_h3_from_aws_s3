@@ -25,7 +25,7 @@ global file_name
 # DOWNLOAD NEW RELEASE
 #=============================================================================
 aws_access_key_id = "AKIAVAMLXVZE7SOMHVXX"
-aws_secret_access_key = "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"
+aws_secret_access_key = "key"
 urlparquet ="s3://weather-delivery/agrotools/source/br-geos-only.snappy.parquet"
 bucket = "weather-delivery"
 prefix = "agrotools/forecasts"
