@@ -24,7 +24,7 @@ global file_name
 
 # DOWNLOAD NEW RELEASE
 #=============================================================================
-aws_access_key_id = "AKIAVAMLXVZE7SOMHVXX"
+aws_access_key_id = "id"
 aws_secret_access_key = "key"
 urlparquet ="s3://weather-delivery/agrotools/source/br-geos-only.snappy.parquet"
 bucket = "weather-delivery"
@@ -56,7 +56,7 @@ df = pd.read_csv( r'F:\Forecast\weather2020/' + file_name , sep = ",")
 #df = pd.read_csv( r'C:\ATPx\Forecast\part-00000-f56ae8ef-4184-4ab8-bffa-f1ab8e830b02-c000.csv', sep = ",")
 
 dbschema = "public"
-password =  "dKQvblHToBzbZLZ"
+password =  "password"
 engine = create_engine('postgresql://postgres:dKQvblHToBzbZLZ@localhost:5433/forecast', connect_args={'options': '-csearch_path={}'.format(dbschema)})
 connection = engine.connect()
 my_query = "ALTER TABLE IF EXISTS forecast120 RENAME TO forecast120_{}; DROP TABLE IF EXISTS forecast120;".format(now.strftime('%Y%m%d'))
